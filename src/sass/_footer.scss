@@ -1,0 +1,28 @@
+.footerImg{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/hand-over-hand-newsletter-2.jpg) ;
+    background-size: cover;
+background-position: center;
+// min-height: 400px;
+// display: flex;
+// align-items: center;
+.darkOverly{
+    background-image:  linear-gradient(rgba(41, 40, 40, 0.849),rgba(41, 40, 40, 0.849));
+    background-blend-mode:overlay;
+    
+}
+.dangerOverly{
+    background-image:  linear-gradient(rgba(253, 23, 23, 0.781),rgba(253, 23, 23, 0.747));
+    background-blend-mode:overlay;
+    
+}
+}
+
+
+// input
+.form-control:focus{
+    // outline: none;
+    box-shadow: none;
+    border-color: inherit;
+  -webkit-box-shadow: none;
+    // border: 0;
+}

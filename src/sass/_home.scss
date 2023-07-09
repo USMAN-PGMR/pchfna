@@ -1,0 +1,233 @@
+// ------------cards----------
+  .card1 {
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+
+  .card1:hover {
+    background-color: red;
+    box-shadow: 0 0 50px rgb(255, 168, 168);
+    border: 0;
+  }
+
+  .card1:hover i,
+  .card1:hover h5 {
+    color: white;
+  }
+
+  .card1 i,
+  .card1 h5 {
+    color: red;
+  }
+
+// -------------------  backGround img------------------
+.imgBack {
+  position: relative; /* Add position relative to the parent element */
+  background: url(https://pchfna.org/wp-content/uploads/2021/06/banner_pchf4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(75, 74, 74, 0.7);
+
+  &:before {
+    content: ""; /* Add a pseudo-element for the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 54, 54, 0.5); /* Specify the overlay color and transparency */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Add a transition for the opacity */
+    opacity: 1; /* Show the overlay on hover */
+  }
+
+  // &:hover:before {
+  // }
+
+  h1 {
+    transform: scale(1); /* Initial scale for the zoom-out animation */
+    transition: transform 0.5s ease; /* Add a transition for the transform */
+  }
+
+  &:hover h1 {
+    transform: scale(0.9); /* Apply the zoom-out effect on hover */
+  }
+}
+
+
+
+// -------------------------video button---------------
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    opacity: 0;
+    // border: 2px solid white;
+    animation: waveEffect 2s linear infinite;
+  }
+
+  @keyframes waveEffect {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0.3;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+
+  // Animation----------
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+  // ------------cards-
+  .card2 {
+    background-color: transparent;
+    
+    i {
+      color: red;
+      font-size: 50px;
+    }
+    
+    h6 {
+      color: black;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    
+    p {
+      color: gray;
+    }
+    
+    &:hover {
+  //     background-image: url(https://pchfna.org/wp-content/uploads/2021/06/Vision_PCHF.png), linear-gradient(rgba(248, 28, 28, 0.897), rgba(248, 28, 28, 0.897));
+  //     background-size: cover;
+  // background-position: center;
+  // background-blend-mode: overlay;
+  // opacity: 1;
+      // background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+      
+      i,
+      h6 {
+        color: white;
+      }
+      p{
+        color: rgba(223, 224, 224, 0.973);
+      }
+    }
+  }
+  .crtHeart:hover{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/Vision_PCHF.png), linear-gradient(rgba(248, 28, 28, 0.897), rgba(248, 28, 28, 0.897));
+    background-size: cover;
+background-position: center;
+background-blend-mode: overlay;
+opacity: 1;
+  }
+  .crtHospital:hover{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/banner1_chhri.jpg), linear-gradient(rgba(248, 28, 28, 0.897), rgba(248, 28, 28, 0.897));
+    background-size: cover;
+background-position: center;
+background-blend-mode: overlay;
+  }
+  .crtUser:hover{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/unnamed.jpg), linear-gradient(rgba(248, 28, 28, 0.897), rgba(248, 28, 28, 0.897));
+    background-size: cover;
+background-position: center;
+background-blend-mode: overlay;
+  }
+  .crtBullhorn:hover{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/awarness_banner_4_pchf.jpg), linear-gradient(rgba(248, 28, 28, 0.897), rgba(248, 28, 28, 0.897));
+    background-size: cover;
+background-position: center;
+background-blend-mode: overlay;
+  }
+
+
+  // AS Pakistan's
+  .backGroundImage{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/hand-over-hand-newsletter-2.jpg), linear-gradient(rgba(65, 63, 63, 0.692),rgba(65, 63, 63, 0.692)) ;
+    background-size: cover;
+background-position: center;
+min-height: 400px;
+display: flex;
+align-items: center;
+background-blend-mode: overlay;
+
+
+  }
+
+
+  // our Mission---------
+  .heartBg{
+    background-image:url(https://pchfna.org/wp-content/uploads/2021/06/bg-Grey-Heart-col.png);
+    background-size: cover;
+    background-position: center;
+    // background-repeat: no-repeat;
+    // padding-bottom: 20px;
+    // height: 500px;
+  }
+
+  .countBack{
+    background-image: url(https://pchfna.org/wp-content/uploads/2021/06/counter-banner.jpg),linear-gradient(rgb(71, 71, 71),rgb(71, 71, 71)) ;
+    background-size: cover;
+background-position: center;
+min-height: 450px;
+// display: flex;
+// flex-direction:row;
+// align-items: center;
+background-blend-mode: overlay;
+  }

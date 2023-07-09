@@ -1,0 +1,194 @@
+// ---carousel button
+.button1 {
+    display: inline-block;
+    // border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 28px;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 8px;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-size: 13px;
+    font-weight: bold;
+    // justify-content: space-between;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -14px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 16px;
+    padding-left: 2px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+//   --------------carosel caption-------------
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+  
+  .carousel-caption img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-caption h4 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption h1 {
+    color: red;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  
+  @media (min-width:530px) and (max-width: 900px) {
+    
+
+    .carousel-caption img  {
+    //   font-size: 20px;
+    // margin-top: 100px;
+    width: 50px;
+    padding: 0;
+    margin-top: 60px;
+    // height: auto;
+    }
+    .carousel-caption h4 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .carousel-caption h3 {
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    .carousel-caption .button1 {
+        font-size: 15px;
+        padding: 4px 6px;
+        margin: 2;
+    }
+  }
+  @media  (max-width: 530px) {
+    
+
+    .carousel-caption img  {
+    //   font-size: 20px;
+    // margin-top: 100px;
+    width: 18px;
+    padding: 0;
+    margin-top: 50px;
+    // height: auto;
+    }
+    .carousel-caption h4 {
+      font-size: 15px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 15px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .carousel-caption h3 {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+    .carousel-caption .button1 {
+        font-size: 10px;
+        padding: 2px 5px;
+        margin: 1;
+    }
+  }
+//   -----------Animation on slider text
+.carousel-caption {
+    /* other styles */
+  
+    .animated-item {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  
+    .animated-item:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+  
+    .animated-item:nth-child(2) {
+      animation-delay: 1s;
+    }
+  
+    .animated-item:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+  
+    .animated-item:nth-child(4) {
+      animation-delay: 2s;
+    }
+  
+    .animated-item:nth-child(5) {
+      animation-delay: 2.5s;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  // mzrgen top
+
+  .content {
+    margin-top: 100px; /* Adjust this value to match the height of your navbar */
+  }
+  @media (max-width: 991.98px) {
+        .content{
+          margin-top: 63px;
+        }
+  }
+  
